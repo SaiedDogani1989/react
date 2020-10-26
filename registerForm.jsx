@@ -17,8 +17,8 @@ class Register extends Form {
      doSubmit = () => {
   //call the server
     console.log('Submitted')
-                       
-     }           
+                        }
+  //render body of register form 
     render() { 
         return ( 
             <form doSubmit={this.handleSubmit}>
@@ -32,5 +32,4 @@ class Register extends Form {
          );
     }
 }
- 
 export default Register ;
