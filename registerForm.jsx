@@ -8,7 +8,7 @@ class Register extends Form {
         errors:{}
           } ;
 
-
+//validation 
           schema = {name: Joi.string().required().min(3).max(12).label('Name'),
                     lastName: Joi.string().required().min(3).max(20).label('Lastname'),
                     password :Joi.string().required().min(5).max(20).label('Password') ,
