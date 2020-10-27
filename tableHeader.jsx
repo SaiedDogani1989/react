@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 class TableHeader extends Component {
     
+    //sort by Ascending or descending
+    
     raiseSort = (path) => {
         const sortColumn = {...this.props.sortColumn};
         if (sortColumn.path === path)
@@ -12,6 +14,8 @@ class TableHeader extends Component {
         }
         this.props.onSort(sortColumn);
     }
+    
+    //use frontawesome  
 
     renderSortIcon = (column) => {
         const {sortColumn} = this.props
@@ -22,7 +26,7 @@ class TableHeader extends Component {
             
             
     render() {
-
+//add your calssName to your css file 
         return ( 
         <thead>
             <tr>
