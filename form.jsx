@@ -11,6 +11,8 @@ class Form extends Component {
         errors: {}
       };
 
+//error and validate 
+
 validate =() => {
     const option = {abortEarly :false}; 
   const {error} = Joi.validate(this.state.data , this.schema , option)
