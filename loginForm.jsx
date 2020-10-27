@@ -15,7 +15,7 @@ schema = {username: Joi.string().required().label('Username'),
 
       
       doSubmit = () => {
-          //call the server
+          //call server
          console.log('Submitted')
          
            }
@@ -23,8 +23,8 @@ schema = {username: Joi.string().required().label('Username'),
     render() { 
         return (  
 <form onSubmit = {this.handleSubmit}>
-   {/* what is onSubmit ? we use that to call the server, save the changes and then redirect the user to diffrent page 
-            actually we use that to prevent the full page reload */}
+   {/* onSubmit use for calling server, save the changes and then redirect the user to diffrent page actually we use that to prevent the full page reload */}
+    {/*first parametr is name , second is label and third is type but fixed value is text and you can change it by give it another value if you want  */}
  {this.renderInput('username' , 'Username')}
  {this.renderInput('password' , 'Password' ,'password')}
 {this.renderButton('Login')}
