@@ -26,7 +26,7 @@ class TableHeader extends Component {
             
             
     render() {
-//add your calssName to your css file 
+//add Style to your css file and then call it in className file 
         return ( 
         <thead>
             <tr>
