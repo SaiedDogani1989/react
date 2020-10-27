@@ -11,7 +11,7 @@ class Form extends Component {
         errors: {}
       };
 
-//error and validate 
+//errors and validate 
 
 validate =() => {
     const option = {abortEarly :false}; 
@@ -51,13 +51,16 @@ handleChange = ({currentTarget: input}) => {
     this.setState({data , errors});
 }
 
-  renderButton(lable){
+//Button 
+renderButton(lable){
 
     return (
     <button disabled = {this.validate()} className="btn btn-primary">{lable}</button>
     
     );
 }
+
+//Select Input
 renderSelect(name,label , options) {
     const {data , errors } = this.state;
     return (
@@ -71,6 +74,8 @@ renderSelect(name,label , options) {
        />
     )
 }
+
+//Input
 renderInput(name,label , type = 'text') {
     const {data , errors} = this.state;
     return (
