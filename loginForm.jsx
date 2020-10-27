@@ -8,6 +8,8 @@ state = {
     errors:{}
       } ;
 
+// validate of the login form
+
 schema = {username: Joi.string().required().label('Username'),
           password: Joi.string().required().label('Password')}
 
